@@ -6,6 +6,7 @@ Problem one, two, and three were solved using **`Active Learning`** approach. Al
 *Ps: As the competition was private. I can't provide the dataset. :)*  
 ---- 
 Problem one: User need to predict which of the Magic Keys given in “problem 1.csv” will buy milk and/or meat in the first 15 days of March-2019. Put Y in the purchase column if the Magic Keys will purchase and N if the Magic Keys will not make a purchase. 
+
 Position: 6th out of 240 
 
 ----
