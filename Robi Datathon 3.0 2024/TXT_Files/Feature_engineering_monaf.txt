@@ -1,0 +1,67 @@
+In the context of predicting whether Magic Keys will make purchases of milk and/or meat in the first 15 days of March 2019, feature engineering involves creating new features from the existing data that can provide 
+additional information to the model and improve its predictive performance. 
+
+Here are some feature engineering ideas specific to this problem:
+
+1. (Done) Purchase History Features:
+* Calculate the total number of purchases made by each Magic Key in the past.
+* Compute the total amount spent by each Magic Key on purchases.
+* Determine the frequency of purchases (e.g., average number of purchases per month).
+
+2. (Done) Box Features:
+* Encode the quality of the boxes purchased by each Magic Key (e.g., using one-hot encoding or ordinal encoding).
+* Determine the average and maximum quality of the boxes purchased by each Magic Key.
+* Calculate the total quantity of milk and meat purchased by each Magic Key.
+
+3. (Done) Temporal Features:
+* Extract temporal information from the purchase dates, such as the day of the week or the month of the year.
+* Compute the average time between purchases for each Magic Key.
+
+4. (Done) Customer Behavior Features:
+* Identify patterns in purchase behavior, such as whether a Magic Key tends to buy fresh items at a premium or frozen items at standard prices.
+* Determine if there are any seasonal trends in purchase behavior.
+
+5. Interaction Features:
+* Create interaction features by combining multiple variables (e.g., quality of the box and purchase unit) to capture non-linear relationships.
+
+7. Aggregated Features:
+* Aggregate information from multiple purchases into summary statistics (e.g., mean, median, standard deviation) to capture the overall purchasing behavior of each Magic Key.
+
+
+By incorporating these features into your modeling pipeline, you can provide richer information to the model, which may lead to better predictions of Magic Keys' purchase behavior in the first 15 days of March 2019. 
+Experiment with different combinations of features and evaluate their impact on model performance to determine the most effective feature set for your problem.
+
+Certainly! Here are some additional features you can consider for each magic key:
+
+1. (Done) Purchase Patterns:
+* Total spent on each delivery option (if applicable).
+
+2. (Done) Box Quality Preferences:
+* Preference for certain box qualities (e.g., premium vs. standard).
+
+4. (Maybe) Delivery Preferences:
+* Preference for certain delivery options (e.g., home delivery vs. collection point).
+* Frequency of using different payment methods (e.g., cash on delivery vs. digital payment).
+
+5. (Maybe) Interaction Features:
+* Interaction between box quality and delivery option (e.g., preference for premium boxes with home delivery).
+* Interaction between box quality and purchase quantity.
+
+6. Purchase History:
+* Frequency of bulk purchases vs. single-item purchases.
+
+Some more 
+
+1. Temporal Features:
+* Extract more temporal features from the purchase date, such as day of the week, month, season, or any special events or holidays during that time.
+
+2.Customer Behavior Features:
+* Investigate whether there are any patterns in the timing of purchases for each Magic Key (e.g., whether they tend to buy more during certain times of the day or month).
+
+3. Box Diversity Features:
+* Calculate the entropy or diversity index of the boxes purchased by each Magic Key to measure how evenly they spread their purchases across different types of boxes.
+
+4. (Maybe) Interaction Features:
+* Explore interactions between different features, such as the interaction between purchase count and total spent to capture variations in spending behavior.
+* Consider interactions between temporal features and customer behavior features to capture how purchasing patterns change over time for each Magic Key.
+

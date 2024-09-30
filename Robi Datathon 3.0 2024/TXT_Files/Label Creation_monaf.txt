@@ -1,0 +1,36 @@
+If you don't have labeled ground truth data, you can generate synthetic labels for training your model. Since your task involves predicting whether Magic Keys will make purchases of milk and/or meat in the 
+first 15 days of March 2019, you can create labels based on certain assumptions or criteria. 
+
+Here are a few approaches you can consider:
+
+1. Threshold-based Labeling:
+* Set a threshold based on some criteria, such as the frequency of past purchases or the total amount spent by each Magic Key.
+* Label Magic Keys that meet or exceed the threshold as positive examples (i.e., 'Y') and the rest as negative examples (i.e., 'N').
+
+2. Rules-based Labeling:
+* Define rules or heuristics based on domain knowledge or patterns observed in the data to determine whether a Magic Key is likely to make a purchase.
+* For example, you could label Magic Keys that have made purchases in the past or have high-quality boxes in their purchase history as positive examples.
+
+3. Clustering-based Labeling:
+* Use clustering techniques, such as K-means clustering, to group Magic Keys based on their purchasing behavior or other features.
+* Assign labels to the clusters based on the characteristics of the Magic Keys within each cluster.
+
+4. Semi-supervised Learning:
+* Use unsupervised learning techniques, such as clustering or anomaly detection, to identify patterns or anomalies in the data.
+* Manually review and label a subset of the identified patterns or anomalies to create a small labeled dataset.
+* Use this labeled dataset to train a semi-supervised model that can then predict labels for the rest of the data.
+
+5. Active Learning:
+* Start with a small labeled dataset generated using one of the above methods.
+* Train an initial model on this dataset and use it to make predictions on unlabeled data.
+* Select instances where the model is uncertain or has low confidence and ask domain experts to label these instances.
+* Incorporate the newly labeled data into the training set and iteratively improve the model.
+
+6. Bootstrapping:
+* Start with a small seed set of labeled examples generated using simple rules or heuristics.
+* Train a model on this seed set and use it to predict labels for the remaining unlabeled data.
+* Incorporate the predicted labels into the training set and retrain the model.
+* Iterate this process until convergence or until the model performance stabilizes.
+
+Choose an approach that best suits your data and problem context, and be sure to validate the generated labels to ensure they are meaningful and representative of the underlying patterns in the data. 
+Additionally, document the labeling process and any assumptions made to facilitate transparency and reproducibility.
